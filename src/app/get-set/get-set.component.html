@@ -1,0 +1,16 @@
+<p>get-set works!</p>
+<p>Your name is : {{displayName}}</p>
+<p>Your pass is : {{displayPass}}</p>
+<p>Your email is : {{displayEmail}}</p>
+<div><h2>Your Name: <input type="text" value="{{displayName}}"  (input)="getName($event)"> </h2>
+    <button (click)="setName()">SetName</button> 
+    <button (click)="showName($event)">GetName</button> 
+    <h2>Your Password: <input type="text" value="{{displayPass}}" #pass></h2> <!-- template variable is defined here "#pass" -->
+    <button (click)="setPass()" >SetPass</button> 
+    <button (click)="getPass(pass.value)">GetPass</button>                      <!-- template variable is used here -->
+    <h2>Your Email: <input type="text"  value="{{displayEmail}}" #email> </h2> <!-- template variable is defined here "#email"-->
+    <button (click)="setEmail()">SetEmail</button>
+    <button (click)="getEmail(email.value)">GetEmail</button> <!-- template variable is used here "#email"-->
+
+</div>
+

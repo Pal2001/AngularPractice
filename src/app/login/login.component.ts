@@ -12,10 +12,18 @@ export class LoginComponent {
   name:string = "KGL";
   clientID = 20;
 
-  handelEvent(event:MouseEvent){
+  handelMouseEvent(event:MouseEvent){ //mouse event method
 
     console.log(event.type);
     console.log((event.target as Element).className);
+   
+    
+  }
+
+  handelEvent(event:Event){ //input event method
+
+    console.log(event.type);
+    console.log((event.target as HTMLInputElement).value);
    
     
   }

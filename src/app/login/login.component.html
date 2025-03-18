@@ -1,14 +1,30 @@
 <p>login works!</p>
 <br>
 <br>
-
-<button name='login' class='btn' (click)="handelEvent($event)" style="height: 100px; width: 100px; background-color: green;">Click Event
+<!-- click event is performed for that a method is called with parameter passed as "$event" -->
+<button name='login' class='btn' (click)="handelMouseEvent($event)" style="height: 100px; width: 100px; background-color: green;">Click Event 
 
 </button>
 
 <br>
 <br>
-<div  (click)="handelEvent($event)" style="height: 100px; width: 100px; background-color: green;">
+<!-- mouseenter event is performed for that a method is called with parameter passed as "$event"  when mouse hover on the field it print on console that mouse is entered-->
+<div  (mouseenter)="handelMouseEvent($event)" style="height: 100px; width: 100px; background-color: green;"> Mouse Enter Event
+
+</div>
+
+<br>
+<br>
+<!-- mouseleave event is performed for that a method is called with parameter passed as "$event"  when mouse hover exit from the field it print on console that mouse leaved the field-->
+<div  (mouseleave)="handelMouseEvent($event)" style="height: 100px; width: 100px; background-color: green;"> Mouse Leave Event
+
+</div>
+
+<br>
+<br>
+<!-- input event is performed for that a method is called with parameter passed as "$event" 
+  when mouse hover on the field it print on console "focus" if exit from the input field it will print "blur"-->
+<div> <input type="text" (input)="handelEvent($event)" (focus)="handelEvent($event)" (blur)="handelEvent($event)">
 
 </div>
 

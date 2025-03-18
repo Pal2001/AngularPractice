@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
+import { GetSetComponent } from './get-set/get-set.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [ LoginComponent,AboutComponent],
+  imports: [ LoginComponent,AboutComponent,GetSetComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
   
