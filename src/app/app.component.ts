@@ -17,7 +17,7 @@ export class AppComponent {
   name = 'Avinash Pal';
   x:any = 'avinash' // any datatype is for if we want store multiple data types of data in the variable
   y:string|number='pal' // in this way we store multiple types of data in single variable
-
+  sum =0;
   calculater (a:number,b:number){ // functions are declared without using function keyword in angular
     console.log('calculater function works')
     this.reader()  //this keyword is used to call function of the same class (to specify that this function present in the same class)
@@ -26,7 +26,10 @@ export class AppComponent {
     this.y=7; // here we can assign numeric value as well bcoz of the initialization and  declaration of dataypes using "|" operator
     console.log(this.y)
     console.log(a+b);
+   this.sum = a+b;
+
     console.log("Calculater function end");
+    
     
     
   }
